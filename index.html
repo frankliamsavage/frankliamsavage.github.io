@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Witness @ Six — nightly news and video broadcasts from the Witness Network gaming community.">
+  <title>Witness @ Six | Witness Network</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b0d12;
+      --panel: #171b24;
+      --red: #e53e45;
+      --text: #f5f5f7;
+      --muted: #b7bbc6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      padding: 24px 6%;
+      border-bottom: 1px solid #303540;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .brand {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+    .brand span { color: var(--red); }
+    nav a, footer a {
+      color: var(--text);
+      text-decoration: none;
+      margin-right: 18px;
+    }
+    nav a:hover, footer a:hover {
+      color: var(--red);
+    }
+    main {
+      max-width: 1050px;
+      margin: auto;
+      padding: 70px 24px;
+    }
+    .eyebrow {
+      color: var(--red);
+      font-weight: bold;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    h1 {
+      font-size: clamp(42px, 7vw, 78px);
+      line-height: 1.08;
+      margin: 16px 0;
+    }
+    h1 span { color: var(--red); }
+    .intro {
+      font-size: 19px;
+      color: var(--muted);
+      max-width: 750px;
+    }
+    .button {
+      display: inline-block;
+      background: var(--red);
+      color: white;
+      padding: 13px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 24px;
+    }
+    .section {
+      margin-top: 80px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-top: 25px;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid #303540;
+      border-radius: 12px;
+      padding: 25px;
+    }
+    .card h3 { margin-top: 0; }
+    .card p { color: var(--muted); }
+    footer {
+      border-top: 1px solid #303540;
+      padding: 28px 6%;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">WITNESS <span>@ SIX</span></div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#broadcasts">Broadcasts</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="eyebrow">Witness Network Presents</div>
+      <h1>WITNESS <span>@ SIX</span></h1>
+      <p class="intro">
+        The nightly news broadcast of the Witness Network gaming
+        community. Bringing together community stories, developments,
+        and events in a video news format.
+      </p>
+      <a class="button"
+         href="https://www.youtube.com/channel/UC6786AH-TqSYYdPtE4ErHfg">
+        Visit Our YouTube Channel
+      </a>
+    </section>
+
+    <section class="section" id="about">
+      <div class="eyebrow">About the Network</div>
+      <h2>News from the World of Witness</h2>
+      <p class="intro">
+        Witness @ Six is a community news production associated with
+        Witness Network and its Project Zomboid gaming community.
+        The broadcast presents stories and developments through
+        narrated video editions.
+      </p>
+    </section>
+
+    <section class="section" id="broadcasts">
+      <div class="eyebrow">Our Broadcasts</div>
+      <h2>Two Ways to Watch</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Full Nightly Broadcast</h3>
+          <p>
+            A widescreen edition of the nightly news, designed
+            for viewing on YouTube.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Vertical Video Edition</h3>
+          <p>
+            A mobile-friendly vertical edition of the broadcast,
+            designed for YouTube Shorts.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Automated Publishing</h3>
+          <p>
+            Witness @ Six is developing an automated publishing
+            workflow that uses the YouTube API to upload videos
+            to the authorized WitnessNetwork channel.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Witness Network. Witness @ Six.</p>
+    <p>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="https://www.youtube.com/channel/UC6786AH-TqSYYdPtE4ErHfg">
+        YouTube
+      </a>
+    </p>
+  </footer>
+</body>
+</html>
